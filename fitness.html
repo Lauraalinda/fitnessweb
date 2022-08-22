@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fitness.css">
+  <script src="https://kit.fontawesome.com/7cf0963032.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <p>Laura Alinda</p>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#pink">TECHSTACK</a></li>
+                <li><a href="https://www.behance.net/gallery/150299203/Fitness-App">DESIGN</a></li>
+                <li><a href="https://github.com/Lauraalinda/Workout-log-fitness-App">GITHUB</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+</section>
+
+<div class="project">
+  <div class="heading">
+    <h1>WORK OUT<br><span>LOG</span></h1>
+    <p>Dare to be great!</p>
+  </div>
+  <div class="fem">
+      <img src="images/fit.png"id="woman">
+  </div>
+</div>
+
+
+
+<div class="pink" id="pink">
+    <h1>Tech stack</h1>
+    <p>An app built on Android using Kotlin that aims at enabling<br>its user to track and plan their daily workouts.</p>
+  <div class="buttons">
+    <button id="btn"><a href="https://www.behance.net/gallery/150299203/Fitness-App">View Design</a></button>
+    <button id="btn"><a href="https://github.com/Lauraalinda/Workout-log-fitness-App">Github</a></button>
+  </div>
+
+
+</div>
+ 
+
+
+<!-- ...java script for toggle.. -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
